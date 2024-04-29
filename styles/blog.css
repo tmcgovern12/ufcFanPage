@@ -1,0 +1,120 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    background-image: url('../images/background1.png');
+    background-repeat: repeat;
+    
+}
+
+header {
+    background: linear-gradient(to right, #FF0000, #000000);
+    border-bottom: 4px solid #070707; 
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-family: "Jersey 25", sans-serif;
+}
+
+h2 {
+    text-align: center;
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bolder;
+    font-family: "Jersey 25", sans-serif;
+    color: black;
+    font-size: large;
+}
+
+.nav-container {
+    border: 2px solid #000000; /* Border color */
+    border-radius: 10px; /* Adjust border-radius to control smoothness of edges */
+    padding: 10px; /* Add padding for spacing */
+    width: fit-content; /* Adjust width as needed */
+}
+
+.nav-container ul {
+    list-style-type: none; /* Remove default list styles */
+    padding: 0;
+}
+
+.nav-container ul li {
+    display: inline; /* Display list items horizontally */
+    margin-right: 10px; /* Add spacing between list items */
+}
+
+.nav-container ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bolder;
+    font-family: "Jersey 25", sans-serif;
+    font-size: large;
+}
+
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.latest-news .news-item {
+    margin-bottom: 20px;
+}
+
+.featured-fighter .fighter-profile {
+    text-align: center;
+    background-image: url('../images/background1.png');
+    background-size: auto; 
+    background-repeat: repeat; 
+
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.hero-image {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/heroimage.jpeg);
+  
+    /* Set a specific height */
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+  
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
