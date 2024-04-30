@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UFC Fighters</title>
     <link rel="stylesheet" href="../styles/fighter.css">
+    <script src="../js/fighter.js"></script>
 </head>
 <body>
 
@@ -37,6 +38,18 @@
     <p>Outside of the UFC Alex Pereira is a two-division champion in GLORY Kickboxing, where he has held titles in the middleweight and light heavyweight divisions. He is known for his exceptional striking skills and knockout power, having achieved numerous victories by knockout throughout his career.</p>
     
 </section>
+
+<footer>
+    <p id="copyright">&copy; <span id="copyright-year"></span> Tadhg McGovern</p>
+</footer>
+
+<script>
+    
+    window.onload = function() {
+        var currentYear = new Date().getFullYear();
+        document.getElementById("copyright-year").textContent = currentYear;
+    };
+</script>
 
 </body>
 </html>

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UFC News</title>
     <link rel="stylesheet" href="../styles/blog.css">
+    <script src="../js/blog.js"></script>
 </head>
 <body>
 
@@ -16,7 +17,7 @@
         <li><a href="blog.html">Blog/News</a></li>
     </ul>
 </nav>
-
+<!-- news articles here -->
 <section class="news">
     <h1>Latest UFC News</h1>
     <div class="article">
@@ -29,8 +30,55 @@
         <p>Date: January 10, 2023</p>
         <p>Etiam consectetur, neque ac scelerisque ultricies, ligula justo pharetra quam, ac vestibulum enim nisi vitae lorem. Nunc tincidunt velit in velit volutpat rhoncus.</p>
     </div>
-    <!-- Add more news articles here -->
+   
 </section>
+
+
+
+<div class="news-container">
+    <section class="news1"> 
+        <h1> Fight companion</h1>
+        <img src="../images/news1.jpeg" alt="">
+        <p>
+            Tune in for Joe Rogan, Brendan Schaub and Bryan Callen as they discuss their opinions on upcoming fights
+        </p>
+    </section>
+
+    <section class="news2">
+        <h1> Post fight O'Malley Interview</h1>
+        <img src="../images/news2.jpeg" alt="">
+        <p>
+            Exclsuive Interview with Shean O'malleys thoughts after his most recent fight
+        </p>
+    </section>
+
+    <section class="news3">
+        <h1>Breaking News: Jon jones released.</h1>
+        <img src="../images/news3.jpeg" alt="">
+        <p>
+           Following his arrest, jon jones has been released from jail on 2,500$ bond.
+        </p>
+    </section>
+
+</div>
+
+
+
+
+
+
+
+<footer>
+    <p id="copyright">&copy; <span id="copyright-year"></span> Tadhg McGovern</p>
+</footer>
+
+<script>
+    
+    window.onload = function() {
+        var currentYear = new Date().getFullYear();
+        document.getElementById("copyright-year").textContent = currentYear;
+    };
+</script>
 
 </body>
 </html>

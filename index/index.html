@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Jersey+25&display=swap" rel="stylesheet">
+<script src="../js/jsindex.js"></script>
 </head>
 <body>
 
@@ -47,8 +48,18 @@
             <a href="https://www.youtube.com/watch?v=6g2P1V6aCEs" target="_blank">Highlights</a>
         </div>
     </section>
-    <footer>
-        <p>&copy; 2024 UFC Fan Website. All rights reserved.</p>
-    </footer>
+    
+        <footer>
+            <p id="copyright">&copy; <span id="copyright-year"></span> Tadhg McGovern</p>
+        </footer>
+    
+        <script>
+            
+            window.onload = function() {
+                var currentYear = new Date().getFullYear();
+                document.getElementById("copyright-year").textContent = currentYear;
+            };
+        </script>
+
 </body>
 </html>

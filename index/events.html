@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Upcoming UFC Events</title>
     <link rel="stylesheet" href="../styles/events.css">
+    <script src="../js/events.js"></script>
 </head>
 <body>
 
@@ -27,14 +28,27 @@
         <h2>UFC 275: <span>June 4, 2022</span></h2>
         <p>Location: TBA</p>
     </div>
-    <!-- Add more upcoming events here -->
+
 </section>
 
 <section>
-<img src="../images/maxresdefault.jpg" alt="">
-<img src="../images/event 1.jpeg" alt="">
-
+    <img id="sectionimg" src="../images/maxresdefault.jpg" alt="">
+<img id="sectionimg2" src="../images/maxresdefault.jpg" alt="">
 </section>
+
+<!-- footer content -->
+<footer>
+    <p id="copyright">&copy; <span id="copyright-year"></span> Tadhg McGovern</p>
+</footer>
+
+
+<script>
+    
+    window.onload = function() {
+        var currentYear = new Date().getFullYear();
+        document.getElementById("copyright-year").textContent = currentYear;
+    };
+</script>
 
 </body>
 </html>
