@@ -118,3 +118,37 @@ footer {
     background-size: cover;
     position: relative;
   }
+
+/* carousel CSS */
+
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-images img {
+    width: 100%;
+    display: none; /* Hide images by default, show them through JavaScript */
+    transition: all 0.5s ease;
+}
+
+.carousel button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 100;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}

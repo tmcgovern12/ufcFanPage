@@ -12,17 +12,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function scrollFunction() {
         var button = document.getElementById("scroll-top-button");
+        var scrollHeight = document.documentElement.scrollHeight;
+        var clientHeight = document.documentElement.clientHeight;
+        var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
 
         
-        var scrollPosition = window.scrollY || window.pageYOffset || document.documentElement.scrollTop;
+        var thresholdPercentage = 20;
 
-        
-        var totalHeight = document.documentElement.scrollHeight;
-
-        
-        var isBottom = (scrollPosition + window.innerHeight) >= totalHeight;
-
-        if (isBottom) {
+        if ((scrollHeight - scrollPosition - clientHeight) / scrollHeight <= thresholdPercentage / 100) {
             button.style.display = "block";
         } else {
             button.style.display = "none";
@@ -34,5 +31,7 @@ document.addEventListener("DOMContentLoaded", function() {
         document.documentElement.scrollTop = 0; 
     };
 });
+
+
 
 

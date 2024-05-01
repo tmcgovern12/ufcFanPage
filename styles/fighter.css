@@ -51,20 +51,20 @@ nav ul li a {
 }
 
 .nav-container {
-    border: 2px solid #000000; /* Border color */
-    border-radius: 10px; /* Adjust border-radius to control smoothness of edges */
-    padding: 10px; /* Add padding for spacing */
-    width: fit-content; /* Adjust width as needed */
+    border: 2px solid #000000;
+    border-radius: 10px; 
+    padding: 10px; 
+    width: fit-content; 
 }
 
 .nav-container ul {
-    list-style-type: none; /* Remove default list styles */
+    list-style-type: none; 
     padding: 0;
 }
 
 .nav-container ul li {
-    display: inline; /* Display list items horizontally */
-    margin-right: 10px; /* Add spacing between list items */
+    display: inline;
+    margin-right: 10px; 
 }
 
 .nav-container ul li a {
@@ -106,18 +106,24 @@ footer {
     width: 100%;
 }
 
-.hero-image {
-    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/heroimage.jpeg);
-  
-    /* Set a specific height */
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-  
-    /* Position and center the image to scale nicely on all screens */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-  }
+.content-wrapper {
+    display: flex; 
+    align-items: flex-start;
+    padding: 20px; 
+}
+
+.image-container {
+    width: 25%;
+    max-width: 25%; 
+}
+
+.image-container img {
+    width: 100%;
+    height: auto; 
+}
+
+.text-container {
+    width: 75%; 
+    padding-left: 20px; 
+    text-align: left; 
+}
