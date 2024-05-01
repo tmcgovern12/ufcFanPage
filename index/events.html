@@ -11,14 +11,19 @@
 </head>
 <body>
 
-<nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="fighter.html">Fighters</a></li>
-        <li><a href="events.html">Events</a></li>
-        <li><a href="blog.html">Blog/News</a></li>
-    </ul>
-</nav>
+    <header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="fighter.html">Fighters</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="blog.html">Blog/News</a></li>
+            </ul>
+        </nav>
+        
+    
+    </header>
 
 <section class="upcoming-events">
     <h1>Upcoming UFC Events</h1>
@@ -40,16 +45,13 @@
 
 <!-- footer content -->
 <footer>
-    <p id="copyright">&copy; <span id="copyright-year"></span> Tadhg McGovern</p>
+  
 </footer>
 
 
 <script>
     
-    window.onload = function() {
-        var currentYear = new Date().getFullYear();
-        document.getElementById("copyright-year").textContent = currentYear;
-    };
+   
 </script>
 
 </body>

@@ -11,14 +11,21 @@
 </head>
 <body>
 
-<nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="fighter.html">Fighters</a></li>
-        <li><a href="events.html">Events</a></li>
-        <li><a href="blog.html">Blog/News</a></li>
-    </ul>
-</nav>
+<header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="fighter.html">Fighters</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="blog.html">Blog/News</a></li>
+        </ul>
+    </nav>
+    
+
+</header>
+
+
 <!-- news articles here -->
 <section class="news">
     <h1>Latest UFC News</h1>
@@ -39,10 +46,10 @@
 
 <div class="news-container">
     <section class="news1"> 
-        <h1> Fight companion</h1>
+        <h1> Coming soon: Fight companion</h1>
         <img src="../images/news1.jpeg" alt="">
         <p>
-            Tune in for Joe Rogan, Brendan Schaub and Bryan Callen as they discuss their opinions on upcoming fights
+            Tune in for Joe Rogan, Brendan Schaub and Bryan Callen as they discuss their opinions on the future of the UFC.
         </p>
     </section>
 
@@ -52,14 +59,16 @@
         <p>
             Exclsuive Interview with Shean O'malleys thoughts after his most recent fight
         </p>
+        <a href="https://www.youtube.com/watch?v=ZAIjMKBpcDw" target="_blank">Tune in</a>
     </section>
 
     <section class="news3">
         <h1>Breaking News: Jon jones released.</h1>
         <img src="../images/news3.jpeg" alt="">
         <p>
-           Following his arrest, jon jones has been released from jail on 2,500$ bond.
+           Jon jones accused of assaulting Sports doping agent.
         </p>
+        <a href="https://www.si.com/fannation/mma/ufc/ufc-jon-jones-arrest-update" target="_blank">Read more</a>
     </section>
 
     <section class="news4">
@@ -68,6 +77,7 @@
         <p>
            McGreggor has been seen training up his phsique. Does this signal a possible return?
         </p>
+        <a href="https://www.youtube.com/watch?v=d52iqo1o-gM" target="_blank">See what connor has to say</a>
     </section>
 
 </div>
@@ -79,15 +89,12 @@
 
 
 <footer>
-    <p id="copyright">&copy; <span id="copyright-year"></span> Tadhg McGovern</p>
+    <button id="scroll-top-button" title="Go to top">Top</button>
 </footer>
 
 <script>
     
-    window.onload = function() {
-        var currentYear = new Date().getFullYear();
-        document.getElementById("copyright-year").textContent = currentYear;
-    };
+   
 </script>
 
 </body>
