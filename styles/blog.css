@@ -85,6 +85,16 @@ section {
     margin-bottom: 20px;
 }
 
+.news3 {
+    float: left;
+    margin-left: 17px; 
+}
+
+.news4 {
+    float: left;
+    margin-left: 17px; 
+}
+
 .featured-fighter .fighter-profile {
     text-align: center;
     background-image: url('../images/background1.png');
@@ -159,4 +169,38 @@ footer {
 
 #scroll-top-button:hover {
     background-color: #3710e6; 
+}
+
+@media only screen and (max-width: 587px) {
+   
+
+    h1 {
+        padding-bottom: 60px;
+        text-decoration: underline;
+    }
+    
+    header {
+        background: linear-gradient(to right, #FF0000, #000000);
+        border-bottom: 4px solid #070707; 
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        font-family: "Jersey 25", sans-serif;
+       
+    }
+
+
+    h2 {
+        padding-bottom: 5px;
+        padding-top: 10px;
+        text-align: left;
+    }
+
+    p {
+        padding: 0 20px;
+    }
+
+    .news-container {
+        padding-bottom: 20px;
+    }
 }

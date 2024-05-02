@@ -93,6 +93,18 @@ section {
 
 }
 
+.text-container {
+    width: 50%;
+    margin: 0 auto; /* Center the container horizontally */
+    padding-left: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    border-radius: 8px;
+    color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    
+}
+
 footer {
     background-color: #333;
     color: #fff;
@@ -121,15 +133,22 @@ footer {
 
 /* carousel CSS */
 
+.carousel-container {
+    text-align: center;  
+    width: 100%;  
+}
+
 .carousel {
     position: relative;
-    width: 100%;
+    width: 50%;  
+    display: inline-block;  
     overflow: hidden;
+    padding-top: 20px
 }
 
 .carousel-images img {
     width: 100%;
-    display: none; /* Hide images by default, show them through JavaScript */
+    display: none; 
     transition: all 0.5s ease;
 }
 
@@ -151,4 +170,31 @@ footer {
 
 .next {
     right: 10px;
+}
+
+/* Phone qeury */
+
+@media (max-width: 768px) {
+    .carousel {
+        width: 80%;  /* large so can see */
+        margin: auto;  
+    }
+
+    .carousel button {
+        padding: 15px;  /* want a bigger button for phone */
+        font-size: 20px;   
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel {
+        width: 95%;  /* want bigger for phone */
+    }
+}
+
+@media (max-width: 320px) {
+    .carousel button {
+        padding: 12px;  /* need less padding */
+        font-size: 18px;  
+    }
 }
