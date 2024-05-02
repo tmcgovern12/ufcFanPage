@@ -22,8 +22,14 @@ header {
     font-family: "Jersey 25", sans-serif;
 }
 
+h1 {
+    padding-bottom: 44px;
+    text-decoration: underline;
+}
+
 h2 {
-    text-align: center;
+    text-align: left;
+    padding-top: 20px;
 }
 
 
@@ -31,6 +37,7 @@ nav ul {
     list-style-type: none;
     padding: 10px;
     text-align: center;
+    padding-top: 2px;
 }
 
 nav ul li {

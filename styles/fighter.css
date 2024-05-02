@@ -40,6 +40,7 @@ nav ul {
     list-style-type: none;
     padding: 10px;
     text-align: center;
+    padding-top: 2px;
 }
 
 nav ul li {
