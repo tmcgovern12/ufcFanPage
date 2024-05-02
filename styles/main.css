@@ -39,6 +39,15 @@ nav ul li {
     padding-top: 10px;
 }
 
+ul li:last-child a {
+    text-decoration: underline;
+}
+
+
+ul li:not(:last-child) a {
+    text-decoration: none;
+}
+
 nav ul li a {
     color: #000000;
     text-decoration: none;
