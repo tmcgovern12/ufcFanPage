@@ -6,8 +6,6 @@
     <title>Upcoming UFC Events</title>
     <link rel="stylesheet" href="../styles/events.css">
     <link href="https://fonts.googleapis.com/css2?family=Jersey+25&display=swap" rel="stylesheet">
-    <script src="../js/events.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
 
     <nav>
@@ -53,43 +51,13 @@
         </footer>
 
 
-        <script>
-            // Function to update the countdown every second
-            function updateCountdown() {
-                // Get the current date and the future date
-                var currentDate = new Date();
-                var futureDate = new Date(currentDate.getTime() + (5 * 24 * 60 * 60 * 1000)); // Adding 5 days in milliseconds
-    
-                // Calculate the time difference between the future date and the current date
-                var timeDifference = futureDate.getTime() - currentDate.getTime();
-    
-                // Ensure timeDifference is positive (futureDate is after currentDate)
-                if (timeDifference < 0) {
-                    document.getElementById('timer').textContent = "Event expired";
-                    return; // Stop the countdown if the event has already passed
-                }
-    
-                // Calculate days, hours, minutes, and seconds
-                var days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
-                var hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                var minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
-                var seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
-    
-                // Format numbers less than 10 with leading zeros
-                hours = ('0' + hours).slice(-2);
-                minutes = ('0' + minutes).slice(-2);
-                seconds = ('0' + seconds).slice(-2);
-    
-                // Display the countdown in the specified element
-                document.getElementById('timer').textContent = "Event in " + days + " days, " + hours + " hours, " + minutes + " minutes, " + seconds + " seconds";
-    
-                // Update the countdown every second
-                setTimeout(updateCountdown, 1000);
-            }
-    
-            // Call updateCountdown() function to start the countdown
+    <script src="../js/events.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
             updateCountdown();
-        </script>
+        });
+    </script>
 
 </body>
 </html>
